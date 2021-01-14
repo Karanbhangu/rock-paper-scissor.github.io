@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient( at top, hsl(214, 47%, 23%) , hsl(237, 49%, 15%)
+    );
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    overflow: hidden;
+    width: 100vw;
+}
+.upper{
+    display: flex;
+    height: 40%;
+    align-items: center;
+    z-index: 100;
+}
+.box{
+    border: 2px solid hsl(217, 16%, 45%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    border-radius: 10px;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.left h1{
+    color: #fff;
+}
+.lower{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+.scoreboards{
+    background-color: #fff;
+    padding: 20px;
+    height: 100px;
+    width: 130px;
+    border-radius: 10px;
+}
+.scoreboards p{
+    color:hsl(229, 64%, 46%);
+    text-align: center;
+}
+.scoreboards h1{
+    color: hsl(229, 25%, 31%);
+    font-size: 3rem;
+    text-align: center;
+}
+.vs{
+    color: #fff;
+}
+.automar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+}
+.automar img, .comp img{
+    background: white;
+    padding: 15px;
+    width: 80px;
+    border-radius: 50%;
+}
+#rules{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#rules:hover{
+    background: #fff;
+    color: black;
+}
+.modal{
+    display: none;
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    position: fixed;
+    z-index: 1000;
+    flex-direction: column;
+}
+.cross{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    height: 5%;
+}
+.imge{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross img{
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+@media only screen and (max-width:627px){
+    .box{
+        padding: 15px;
+        width: 400px;
+    }
+    .imge img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width:423px){
+    .box{
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px;
+        width: 300px;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+    .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .scoreboards{
+        padding: 10px;
+        height: 80px;
+        width: 100px;
+        margin-top: 9px;
+    }
+    .automar img, .comp img{
+        width: 65px;
+        margin: 10px;
+    }
+    .automar{
+        justify-content: center;
+    }
+    #rules{
+        margin: 0px 20px 30px auto;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissor || Karan Bhangu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="modal" id="modal">
+    <div class="cross">
+      <img src="images/icon-close.svg" alt="" id="imges">
+    </div>
+    <div class="imge">    <img src="images/image-rules.svg" alt="">
+    </div>
+  </div>
+  <div class="upper">
+    <div class="box">
+      <div class="left">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class="right">
+        <div class="scoreboards">
+          <p>SCORE</p>
+          <h1 id="score">0</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="lower">
+    <div class="automar">
+      <img src="images/icon-rock.svg" alt="" onclick="play1()">
+      <img src="images/icon-paper.svg" alt="" onclick="play2()">
+      <img src="images/icon-scissors.svg" alt="" onclick="play3()">
+    </div>
+    <div class="vs">
+      <br><br>
+      <h2>VS</h2>
+    </div>
+    <div class="comp">
+      <br><br>
+      <div id="comp">
+
+      </div>
+    </div>
+  </div>
+  <h2 id="rules" onclick="rules()">Rules</h2>
+</body>
+<script src="app.js"></script>
+</html>
